@@ -1,8 +1,6 @@
 # ofxRpiLED
 
-OpenFrameworks LED matrix addon for Raspberry Pi. It is recommended to install an image with a realtime kernel
-(for instance [this one][emlid-rt]) to minimize a loaded system having an influence on the image quality.
-
+OpenFrameworks LED matrix addon for Raspberry Pi based on Henner Zeller's [rpi-rgb-led-matrix][led-lib] library. 
 
 **Hardware**
 
@@ -30,6 +28,8 @@ DEFINES+=-DADAFRUIT_RGBMATRIX_HAT
 # Then uncomment the following define.
 DEFINES+=-DADAFRUIT_RGBMATRIX_HAT_PWM
 ```
+
+It is recommended to install an image with a realtime kernel (for instance [this one][emlid-rt]) to minimize a loaded system having an influence on the image quality.
 
 [ada-hat]: https://www.adafruit.com/products/2345/
 [led-lib]: https://github.com/hzeller/rpi-rgb-led-matrix/
