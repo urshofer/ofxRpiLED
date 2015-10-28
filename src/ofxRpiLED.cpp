@@ -18,7 +18,6 @@ void ofxRpiLED::setup(int _rows, int _chain, int _parallel){
 	/*
 	* Set up GPIO pins. This fails when not running as root.
 	*/
-	GPIO io;
 	if (!io.Init())
 		return;
 
