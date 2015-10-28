@@ -33,7 +33,7 @@ void ofxRpiLED::setup(int _rows, int _chain, int _parallel){
 	ofSleepMillis(100);
 	canvas->Fill(0,0,255);	
 	ofSleepMillis(100);
-	canvas->Fill(0,0,0);	
+	canvas->Fill(0,0,0);
 	cW = canvas->width();
 	cH = canvas->height();
 }
