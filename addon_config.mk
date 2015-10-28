@@ -62,18 +62,11 @@ common:
 	
 	# when parsing the file system looking for sources exclude this for all or
 	# a specific platform
-	ADDON_SOURCES_EXCLUDE = libs/oscpack/src/ip/win32/%
+	#ADDON_SOURCES_EXCLUDE = libs/oscpack/src/ip/win32/%
 	
 	# when parsing the file system looking for include paths exclude this for all or
 	# a specific platform
     # ADDON_INCLUDES_EXCLUDE = 
 	
-linuxarmv6l:
-	ADDON_LIBS_EXCLUDE = libs/matrix
-	ADDON_INCLUDES_EXCLUDE = libs/matrix/%
-	ADDON_SOURCES_EXCLUDE = libs/matrix/%
-
-linuxarmv7l:
-	ADDON_LIBS_EXCLUDE = libs/matrix
-	ADDON_INCLUDES_EXCLUDE = libs/matrix/%
-	ADDON_SOURCES_EXCLUDE = libs/matrix/%
+	OFXRPILED_ROOT = $(OF_ROOT)/addons/ofxRpiLED/libs/rgb_matrix
+	ADDON_LDFLAGS = $(OFXRPILED_ROOT)/lib/linux/librgbmatrix.a  -lrt -lm -lpthread	
