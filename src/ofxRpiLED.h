@@ -1,6 +1,5 @@
-
 #include "ofMain.h"
-#include "led-matrix.h"
+#include "../libs/matrix/include/led-matrix.h"
 
 using namespace rgb_matrix;
 
@@ -26,5 +25,3 @@ public:
     void draw(ofPixels p);
   	
 };
-
-#endif

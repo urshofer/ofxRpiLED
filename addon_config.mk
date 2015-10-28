@@ -69,11 +69,11 @@ common:
     # ADDON_INCLUDES_EXCLUDE = 
 	
 linuxarmv6l:
-	ADDON_PKG_CONFIG_LIBRARIES = matrix
 	ADDON_LIBS_EXCLUDE = libs/matrix
 	ADDON_INCLUDES_EXCLUDE = libs/matrix/%
-	
+	ADDON_SOURCES_EXCLUDE = libs/matrix/%
+
 linuxarmv7l:
-	ADDON_PKG_CONFIG_LIBRARIES = matrix
 	ADDON_LIBS_EXCLUDE = libs/matrix
 	ADDON_INCLUDES_EXCLUDE = libs/matrix/%
+	ADDON_SOURCES_EXCLUDE = libs/matrix/%
