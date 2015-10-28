@@ -1,7 +1,9 @@
 #include "ofMain.h"
-#include "../libs/matrix/include/led-matrix.h"
+#include "../libs/rgb_matrix/include/led-matrix.h"
 
-using namespace rgb_matrix;
+using rgb_matrix::GPIO;
+using rgb_matrix::RGBMatrix;
+using rgb_matrix::Canvas;
 
 class ofxRpiLED {
     
